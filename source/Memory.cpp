@@ -371,6 +371,11 @@ void SetRamWorksMemorySize(UINT pages)
 	g_uMaxExPages = pages;
 }
 
+UINT GetRamWorksMemorySize()
+{
+	return g_uMaxExPages;
+}
+
 UINT GetRamWorksActiveBank(void)
 {
 	return g_uActiveBank;

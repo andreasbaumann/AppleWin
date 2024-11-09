@@ -5,6 +5,8 @@
 
 #pragma once
 
+#ifdef _MSC_VER
+
 #include <stdio.h>
 #include <tchar.h>
 
@@ -21,3 +23,12 @@ typedef UINT64 uint64_t;
 #endif
 
 #include <string>
+
+#else
+
+#include <cstring>
+#include <cstdlib>
+#include "windows.h"
+#include <string>
+
+#endif

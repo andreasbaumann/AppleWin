@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QApple</class>
+ <widget class="QMainWindow" name="QApple">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QApple</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>102</red>
+         <green>102</green>
+         <blue>102</blue>
+        </color>
+       </brush>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1032</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>S&amp;ystem</string>
+    </property>
+    <addaction name="actionStart"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionReboot"/>
+   </widget>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>&amp;Video</string>
+    </property>
+    <addaction name="actionScreenshot"/>
+    <addaction name="actionBenchmark"/>
+    <addaction name="actionNext_video_mode"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>Wi&amp;ndow</string>
+    </property>
+    <addaction name="actionMemory"/>
+    <addaction name="actionAudio_Info"/>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Too&amp;ls</string>
+    </property>
+    <addaction name="actionOptions"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_state"/>
+    <addaction name="actionLoad_state_from"/>
+    <addaction name="actionSave_state"/>
+    <addaction name="actionSwap_disks"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSystem"/>
+   <addaction name="menuVideo"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>size</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action4_3"/>
+   <addaction name="actionX1"/>
+   <addaction name="actionX2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>controls</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionStart"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionReboot"/>
+  </widget>
+  <action name="actionStart">
+   <property name="text">
+    <string>&amp;Start</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Pause</string>
+   </property>
+   <property name="shortcut">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="action4_3">
+   <property name="text">
+    <string>4:3</string>
+   </property>
+  </action>
+  <action name="actionX1">
+   <property name="text">
+    <string>x1</string>
+   </property>
+  </action>
+  <action name="actionX2">
+   <property name="text">
+    <string>x2</string>
+   </property>
+  </action>
+  <action name="actionReboot">
+   <property name="text">
+    <string>&amp;Reboot</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionBenchmark">
+   <property name="text">
+    <string>&amp;Benchmark</string>
+   </property>
+  </action>
+  <action name="actionMemory">
+   <property name="text">
+    <string>&amp;Memory</string>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="text">
+    <string>&amp;Options...</string>
+   </property>
+  </action>
+  <action name="actionLoad_state">
+   <property name="text">
+    <string>&amp;Load state</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </action>
+  <action name="actionSave_state">
+   <property name="text">
+    <string>&amp;Save state</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>&amp;About Qt...</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>A&amp;bout...</string>
+   </property>
+  </action>
+  <action name="actionScreenshot">
+   <property name="text">
+    <string>&amp;Screenshot</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F12</string>
+   </property>
+  </action>
+  <action name="actionSwap_disks">
+   <property name="text">
+    <string>Swap &amp;disks</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionLoad_state_from">
+   <property name="text">
+    <string>Load state...</string>
+   </property>
+  </action>
+  <action name="actionNext_video_mode">
+   <property name="text">
+    <string>Next video mode</string>
+   </property>
+   <property name="toolTip">
+    <string>Next video mode</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAudio_Info">
+   <property name="text">
+    <string>Audio Info</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
