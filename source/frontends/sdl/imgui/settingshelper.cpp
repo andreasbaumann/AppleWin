@@ -57,6 +57,7 @@ namespace
      {A2TYPE_BASE64A, "BASE64A"},
      {A2TYPE_PRAVETS8A, "PRAVETS8A"},
      {A2TYPE_TK30002E, "TK30002E"},
+     {A2TYPE_IMC2001, "IMC2001"},
     };
 
   const std::map<eCpuType, std::string> cpuTypes =
